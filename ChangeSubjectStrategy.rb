@@ -6,8 +6,12 @@ class ChangeSubjectStrategy < Response
 		@hash = h
 		@array = a
 	end
+	
+	def check?
+		
+	end
 
-	def applying(input)
+	def apply(input)
 		i = 0
 		while i < @array.length do
 			if !(input.match ( @array[i]) )		#checking the input word match or nor

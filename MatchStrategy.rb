@@ -2,12 +2,15 @@ require_relative 'Response.rb'
 
 class MatchStrategy < Response
 
-	def initialize(h, a)
-		@hash = h
-		@array = a
+	def initialize(response_list)
+		@response = response_list
 	end
 	
-	def applying(input)
+	def check?
+		
+	end
+	
+	def apply(input)
 		i = 0
 		while i < @array.length do
 			if (input.match ( @array[i]) )		#checking the input word match or nor

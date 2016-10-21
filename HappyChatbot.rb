@@ -1,33 +1,13 @@
-require_relative 'Chat.rb'
-
-require "observer"
-
-
 class HappyChatbot < Chat
-    include Observable
-
-def initialize(nuser, nstr)
-    
-    nuser.add_observer(self)
-    super(nuser,nstr)
-end
-
-def startConv
+  def get_file_name
+    @file = 'chatter_angry.txt'
+  end
+  
+  def startConv
     puts " Hiii , i'm so happy!"
-end
-
-def endConv
+  end
+  
+  def endConv
     puts " Byeeee!"
-end
-
-def update(input)
-    k = 0
-    while k < 4 do
-        if ( @strategy[k].applying(input) == 0)		#checking every object's applying method then chooses one of them and applying
-            break 			# to prevent duplicete messages and other bugs, putting break right there
-        end
-        k = k + 1
-    end
-    end
-
+  end
 end
