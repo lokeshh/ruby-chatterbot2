@@ -6,7 +6,7 @@ class AngryChatbot < Chatbot
   end
   
   def endConv
-      puts "BYE :@ "
+      puts " BYE :@ "
   end
   
   def read_file

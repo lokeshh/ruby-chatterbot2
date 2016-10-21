@@ -1,4 +1,4 @@
-your name: My name is ?, but do names really even matter?;
+your name: My name is Blue, but do names really even matter?;
 
 are you: I probably won’t be tomorrow; You don’t really care, do you?; No, i’m just sad. Are you?;	 
 
