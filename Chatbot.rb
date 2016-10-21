@@ -1,6 +1,10 @@
+require_relative 'MatchStrategy.rb'
+require_relative 'QuestionStrategy.rb'
+require_relative 'ChangeSubjectStrategy.rb'
+
 class Chatbot
-	def initialize(user)
-		@user = user
+	def initialize
+		setup
 	end
 
 	def setup
@@ -22,11 +26,11 @@ class Chatbot
 	def initialize_strategies
 		@subject_strategy = ChangeSubjectStrategy.new @response_list
 		@match_strategy = MatchStrategy.new @response_list
-		@question_strategy = EndConversationStrategy.new @response_list
+		@question_strategy = QuestionStrategy.new @response_list
 	end
 
-	def enterChat
-		@user.add_observer(self)
+	def enterChat user
+		user.add_observer(self)
 		startConv
 	end
 

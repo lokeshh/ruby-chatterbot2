@@ -1,6 +1,6 @@
 class Response
-	def initialize
-		raise 'not to be initialized'
+	def initialize response_list
+		@response_list = response_list
 	end
 	
 	def check?

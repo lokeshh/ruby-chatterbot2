@@ -1,12 +1,6 @@
 require_relative 'Response.rb'
 
 class ChangeSubjectStrategy < Response
-
-	def initialize(h, a)
-		@hash = h
-		@array = a
-	end
-	
 	def check?
 		
 	end

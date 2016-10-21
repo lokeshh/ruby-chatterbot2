@@ -8,7 +8,7 @@ class User
     @name = name
   end
   
-  def response
+  def converse
     input = gets.chomp
     changed
     notify_observers(input)

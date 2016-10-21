@@ -1,6 +1,8 @@
-class HappyChatbot < Chat
-  def get_file_name
-    @file = 'chatter_angry.txt'
+require_relative 'Chatbot.rb'
+
+class HappyChatbot < Chatbot
+  def read_file
+    @file = File.open('chatter_angry.txt')
   end
   
   def startConv
