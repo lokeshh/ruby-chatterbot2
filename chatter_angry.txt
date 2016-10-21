@@ -24,3 +24,8 @@ what: I don’t really care, but what?; what?!; I know but I would never tell yo
 
 change subject: I have to know, what’s your favorite movie?; Just curious, what’s your favorite thing about being a kid?; What kind of music do you wish you were listening to right now?; What’s your favorite topic in computer science?; 
 
+age: Older to know enough; Enough to scold you; Why should I tell you?;
+
+tell joke: Were you born like this?; You are a joke.;
+
+want: I don't care what you want.; I couldn't expect anything better from you?
