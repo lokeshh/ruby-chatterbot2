@@ -30,6 +30,7 @@ class Chatbot
 	end
 
 	def enterChat user
+		@user = user
 		user.add_observer(self)
 		startConv
 	end
