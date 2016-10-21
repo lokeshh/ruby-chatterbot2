@@ -16,7 +16,7 @@ class Chatbot
 	def generate_response_list
 		@response_list = {}
 		@file.each_line do |line|
-			if line.strip != ''
+			if line.strip! != ''
 				to_match, result = line.split(':')
 				@response_list[to_match] = result.split(';')
 			end

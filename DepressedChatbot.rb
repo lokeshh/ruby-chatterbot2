@@ -3,7 +3,7 @@ require_relative 'Chatbot.rb'
 class DepressedChatbot < Chatbot
 
   def read_file
-    @file = File.open('chatter_angry.txt')
+    @file = File.open('chatter_sad.txt')
   end
 
   def startConv
